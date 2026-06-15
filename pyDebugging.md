@@ -15,4 +15,3 @@ A quick VS Code shortcut cheat sheet:
 - `F11` — step into (go inside a function)
 - `Shift+F5` — stop debugging
 
-Click any of the "Show me" buttons above to dive deeper into any phase, or paste a buggy snippet here and we can debug it together.
