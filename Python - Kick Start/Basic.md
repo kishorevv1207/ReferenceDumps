@@ -1,38 +1,34 @@
 ### Windows:
 
 ```
-- python -m pip install --no-deps -r requirements.txt
+python -m pip install --no-deps -r requirements.txt
 
-- python -m pip install --no-deps -r '.\requirements(Windows).txt'
+pip freeze | % { pip uninstall -y $_.Split('==')[0] }
 
-- pip freeze | % { pip uninstall -y $_.Split('==')[0] }
+python -c "import sys; print(sys.executable)"
 
-- python -c "import sys; print(sys.executable)"
+py -0
 
-- py -0
+py -3.10 -m venv myenv
 
-- py -3.10 -m venv myenv
+python -c "import sys; print(sys.executable)"
 
-- python -c "import sys; print(sys.executable)"
+python -m pip install --upgrade
 
-- python manage.py runserver
+python -m pip check
 
-- python -m pip install --upgrade
+python -m pip list
 
-- python -m pip check
+python -m pip show 
 
-- python -m pip list
-
-- python -m pip show 
-
-- python --version
+python --version
 
 ```
 ----
 
 ### **Python Versions Strucutre**
 
-- [MAJOR.MINOR.PATCH]
+- `[MAJOR.MINOR.PATCH]`
 
 ***Examples***
 
