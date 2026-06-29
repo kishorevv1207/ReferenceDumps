@@ -29,13 +29,13 @@
 
 ----
 
-**Python Versions**
+### **Python Versions Strucutre**
 
 - [MAJOR.MINOR.PATCH]
 
 ***Examples***
 
- Python 3.13.9
+ `Python 3.13.9`
 
 - 3 → Major version
 - 13 → Minor version
@@ -54,7 +54,7 @@
 
 ***
 
-# Big Picture Architecture
+### Big Picture Architecture
 
 ```
 System = Multiple small services (repos)
@@ -72,7 +72,7 @@ Each repo:
 
 ***
 
-# How All Repos Work Together
+### How All Repos Work Together
 
 They don’t combine at code level — they connect via **APIs / communication**
 
@@ -97,7 +97,7 @@ User → API Gateway → Repo A (User Service)
 
 ***
 
-# Why Different Python Versions Work Fine
+### Why Different Python Versions Work Fine
 
 Because each repo runs in its own environment:
 
@@ -123,7 +123,7 @@ Repo B:
 
 ***
 
-#  Deployment Process (Simple)
+##  Deployment Process (Simple)
 
 Each repo has its own pipeline:
 
@@ -146,7 +146,7 @@ Each repo has its own pipeline:
 
 ***
 
-# Example Deployment Flow
+## Example Deployment Flow
 
 ### Repo A updated:
 
@@ -164,7 +164,7 @@ Code change → CI/CD → Deploy Payment Service
 
 ***
 
-#  How They Stay Connected After Deployment
+##  How They Stay Connected After Deployment
 
 Even after independent deployments:
 
@@ -180,7 +180,7 @@ User Service → calls → http://payment-service/api/pay
 
 ***
 
-# Important Rules in This Setup
+## Important Rules in This Setup
 
 ### 1. API contract must be stable
 
