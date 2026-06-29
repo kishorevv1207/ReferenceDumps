@@ -1,5 +1,6 @@
 ### Windows:
 
+```
 - python -m pip install --no-deps -r requirements.txt
 
 - python -m pip install --no-deps -r '.\requirements(Windows).txt'
@@ -26,7 +27,7 @@
 
 - python --version
 
-
+```
 ----
 
 ### **Python Versions Strucutre**
